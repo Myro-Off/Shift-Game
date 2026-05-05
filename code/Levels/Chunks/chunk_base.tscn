@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b22l2xjudc24t"]
+
+[ext_resource type="Texture2D" uid="uid://b1onpejapl200" path="res://Assets/floor.png" id="1_0beeu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0beeu"]
+size = Vector2(2000, 512)
+
+[node name="Chunk_Base" type="Node2D" unique_id=1447952176]
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1274447046]
+collision_mask = 0
+
+[node name="TextureRect" type="TextureRect" parent="Floor" unique_id=1671655950]
+self_modulate = Color(0.101960786, 0.101960786, 0.101960786, 1)
+offset_right = 2000.0
+offset_bottom = 512.0
+texture = ExtResource("1_0beeu")
+stretch_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=941958044]
+visibility_layer = 0
+position = Vector2(1000, 256)
+shape = SubResource("RectangleShape2D_0beeu")
+
+[node name="EndPosition" type="Marker2D" parent="." unique_id=341620377]
+position = Vector2(2000, 0)

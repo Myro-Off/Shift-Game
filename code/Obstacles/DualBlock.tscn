@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://buoerwjk7cage"]
+
+[ext_resource type="Script" uid="uid://cri1aabp5vwo8" path="res://Obstacles/DualBlock.gd" id="1_dktce"]
+[ext_resource type="Script" uid="uid://dsupt81053rvg" path="res://Components/AnimatorComponent.gd" id="2_xna0a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_um04o"]
+size = Vector2(80, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dktce"]
+size = Vector2(80, 80)
+
+[node name="DualBlock" type="StaticBody2D" unique_id=2036023754]
+script = ExtResource("1_dktce")
+
+[node name="ApproachDetector" type="Area2D" parent="." unique_id=1176518086]
+collision_layer = 0
+collision_mask = 2
+
+[node name="DetectorShape" type="CollisionShape2D" parent="ApproachDetector" unique_id=1896321380]
+shape = SubResource("RectangleShape2D_um04o")
+
+[node name="CollisionBlock" type="CollisionShape2D" parent="." unique_id=1435320421]
+shape = SubResource("RectangleShape2D_dktce")
+
+[node name="VisualLeft" type="ColorRect" parent="." unique_id=1164629902]
+modulate = Color(0.95686275, 0.2627451, 0.21176471, 1)
+offset_left = -40.0
+offset_top = -40.0
+offset_bottom = 40.0
+
+[node name="VisualRight" type="ColorRect" parent="." unique_id=1900322396]
+modulate = Color(0.12941177, 0.5882353, 0.9529412, 1)
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VisualSeparator" type="ColorRect" parent="." unique_id=1924373094]
+offset_left = -1.0
+offset_top = -40.0
+offset_right = 1.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatorComponent" type="Node" parent="." unique_id=1561397249]
+script = ExtResource("2_xna0a")

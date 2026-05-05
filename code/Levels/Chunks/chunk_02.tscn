@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c6kluy1a0myqs"]
+
+[ext_resource type="PackedScene" uid="uid://b22l2xjudc24t" path="res://Levels/Chunks/chunk_base.tscn" id="1_w3h8o"]
+
+[node name="Chunk_02" unique_id=1447952176 instance=ExtResource("1_w3h8o")]

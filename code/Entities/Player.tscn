@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://qa11n5i7a248"]
+
+[ext_resource type="Script" uid="uid://by5yv6rucbkgv" path="res://Entities/Player.gd" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://cfnakbtwds17u" path="res://Core/Camera.gd" id="2_kyqiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(80, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6t5aa"]
+size = Vector2(80, 80)
+
+[node name="Player" type="CharacterBody2D" unique_id=1906163207 groups=["Player"]]
+collision_layer = 2
+collision_mask = 0
+floor_max_angle = 1.3962634
+floor_snap_length = 0.0
+script = ExtResource("1_v0iea")
+
+[node name="PhysicsBox" type="CollisionShape2D" parent="." unique_id=994596845]
+shape = SubResource("RectangleShape2D_cvnsp")
+
+[node name="LethalDetector" type="Area2D" parent="." unique_id=1445698295]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LethalDetector" unique_id=1720637462]
+shape = SubResource("RectangleShape2D_6t5aa")
+
+[node name="Visual_Outer" type="ColorRect" parent="." unique_id=1118069094]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(40, 40)
+color = Color(0.5128888, 0.123328425, 0.09471662, 1)
+
+[node name="Visual_Inner" type="ColorRect" parent="." unique_id=2120931598]
+offset_left = -35.0
+offset_top = -35.0
+offset_right = 35.0
+offset_bottom = 35.0
+pivot_offset = Vector2(35, 35)
+color = Color(0.95686275, 0.2627451, 0.21176471, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1103847601]
+offset = Vector2(480, 0)
+limit_bottom = 200
+position_smoothing_speed = 15.0
+drag_vertical_enabled = true
+script = ExtResource("2_kyqiw")

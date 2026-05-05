@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://eaochostb2yh"]
+
+[ext_resource type="Script" uid="uid://c7x2t1umerldo" path="res://Obstacles/UniversalElements.gd" id="1_wix2m"]
+[ext_resource type="Script" uid="uid://dsupt81053rvg" path="res://Components/AnimatorComponent.gd" id="2_46cdf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46cdf"]
+size = Vector2(80, 80)
+
+[node name="UniversalElement" type="StaticBody2D" unique_id=1824083822]
+collision_layer = 32
+collision_mask = 0
+script = ExtResource("1_wix2m")
+
+[node name="CollisionBlock" type="CollisionShape2D" parent="." unique_id=280122283]
+visible = false
+position = Vector2(0, -40)
+shape = SubResource("RectangleShape2D_46cdf")
+
+[node name="VisualBlock" type="ColorRect" parent="." unique_id=482630492]
+modulate = Color(0.95686275, 0.2627451, 0.21176471, 1)
+offset_left = -40.0
+offset_top = -80.0
+offset_right = 40.0
+
+[node name="CollisionSpike" type="CollisionPolygon2D" parent="." unique_id=962668060]
+visible = false
+polygon = PackedVector2Array(35, 0, 0, -80, -35, 0)
+disabled = true
+
+[node name="VisualSpike" type="Polygon2D" parent="." unique_id=401629450]
+visible = false
+modulate = Color(0.95686275, 0.2627451, 0.21176471, 1)
+polygon = PackedVector2Array(-40, 0, 40, 0, 0, -80)
+
+[node name="AnimatorComponent" type="Node" parent="." unique_id=1227828375]
+script = ExtResource("2_46cdf")

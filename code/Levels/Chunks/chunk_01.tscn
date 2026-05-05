@@ -1,0 +1,394 @@
+[gd_scene format=3 uid="uid://4r8vrtf3hice"]
+
+[ext_resource type="PackedScene" uid="uid://b22l2xjudc24t" path="res://Levels/Chunks/chunk_base.tscn" id="1_iymv6"]
+[ext_resource type="PackedScene" uid="uid://buoerwjk7cage" path="res://Obstacles/DualBlock.tscn" id="3_0be26"]
+[ext_resource type="PackedScene" uid="uid://eaochostb2yh" path="res://Obstacles/UniversalElement.tscn" id="3_lq7tt"]
+
+[node name="Chunk_01" unique_id=1447952176 instance=ExtResource("1_iymv6")]
+
+[node name="UniversalElement2" parent="." index="2" unique_id=844402653 instance=ExtResource("3_lq7tt")]
+position = Vector2(439, 0)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement3" parent="." index="3" unique_id=1382805555 instance=ExtResource("3_lq7tt")]
+position = Vector2(519, 0)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement6" parent="." index="4" unique_id=1637148909 instance=ExtResource("3_lq7tt")]
+position = Vector2(280, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement7" parent="." index="5" unique_id=207934360 instance=ExtResource("3_lq7tt")]
+position = Vector2(360, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement8" parent="." index="6" unique_id=792921879 instance=ExtResource("3_lq7tt")]
+position = Vector2(440, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement54" parent="." index="7" unique_id=1824083822 instance=ExtResource("3_lq7tt")]
+position = Vector2(439, -239)
+collision_layer = 128
+element_color = 2
+
+[node name="UniversalElement55" parent="." index="8" unique_id=1894188619 instance=ExtResource("3_lq7tt")]
+position = Vector2(439, -159)
+collision_layer = 128
+element_color = 2
+
+[node name="UniversalElement56" parent="." index="9" unique_id=329982605 instance=ExtResource("3_lq7tt")]
+position = Vector2(439, -79)
+collision_layer = 128
+element_color = 2
+
+[node name="UniversalElement50" parent="." index="10" unique_id=1298782073 instance=ExtResource("3_lq7tt")]
+position = Vector2(40, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement51" parent="." index="11" unique_id=1779752870 instance=ExtResource("3_lq7tt")]
+position = Vector2(120, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement52" parent="." index="12" unique_id=1016910908 instance=ExtResource("3_lq7tt")]
+position = Vector2(200, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement9" parent="." index="13" unique_id=1514906040 instance=ExtResource("3_lq7tt")]
+position = Vector2(519, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement10" parent="." index="14" unique_id=1033264088 instance=ExtResource("3_lq7tt")]
+position = Vector2(599, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement59" parent="." index="15" unique_id=1301467104 instance=ExtResource("3_lq7tt")]
+position = Vector2(679, -319)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement12" parent="." index="16" unique_id=2081192137 instance=ExtResource("3_lq7tt")]
+position = Vector2(759, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement13" parent="." index="17" unique_id=1663104894 instance=ExtResource("3_lq7tt")]
+position = Vector2(839, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement14" parent="." index="18" unique_id=665052805 instance=ExtResource("3_lq7tt")]
+position = Vector2(919, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement60" parent="." index="19" unique_id=610125490 instance=ExtResource("3_lq7tt")]
+position = Vector2(998, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement61" parent="." index="20" unique_id=995585569 instance=ExtResource("3_lq7tt")]
+position = Vector2(945, -252)
+collision_layer = 256
+element_color = 3
+anim_active = true
+anim_translation = Vector2(0, 50)
+anim_duration = 4.0
+anim_delay = 2.0
+
+[node name="UniversalElement62" parent="." index="21" unique_id=708983007 instance=ExtResource("3_lq7tt")]
+position = Vector2(893, -253)
+collision_layer = 256
+element_color = 3
+anim_active = true
+anim_translation = Vector2(0, 50)
+anim_duration = 4.0
+anim_delay = 2.0
+
+[node name="UniversalElement16" parent="." index="22" unique_id=840417563 instance=ExtResource("3_lq7tt")]
+position = Vector2(1078, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement28" parent="." index="23" unique_id=242285687 instance=ExtResource("3_lq7tt")]
+position = Vector2(1239, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement29" parent="." index="24" unique_id=1682063733 instance=ExtResource("3_lq7tt")]
+position = Vector2(1318, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement57" parent="." index="25" unique_id=223607278 instance=ExtResource("3_lq7tt")]
+position = Vector2(1398, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement30" parent="." index="26" unique_id=1027152325 instance=ExtResource("3_lq7tt")]
+position = Vector2(1478, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement31" parent="." index="27" unique_id=1131881390 instance=ExtResource("3_lq7tt")]
+position = Vector2(1000, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement32" parent="." index="28" unique_id=681760596 instance=ExtResource("3_lq7tt")]
+position = Vector2(1079, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement33" parent="." index="29" unique_id=1136332665 instance=ExtResource("3_lq7tt")]
+position = Vector2(1159, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement43" parent="." index="30" unique_id=1379196604 instance=ExtResource("3_lq7tt")]
+position = Vector2(1797, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement44" parent="." index="31" unique_id=585465452 instance=ExtResource("3_lq7tt")]
+position = Vector2(1876, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement45" parent="." index="32" unique_id=1243601521 instance=ExtResource("3_lq7tt")]
+position = Vector2(1956, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement46" parent="." index="33" unique_id=582244054 instance=ExtResource("3_lq7tt")]
+position = Vector2(1558, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement47" parent="." index="34" unique_id=1524811091 instance=ExtResource("3_lq7tt")]
+position = Vector2(1637, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement48" parent="." index="35" unique_id=793609421 instance=ExtResource("3_lq7tt")]
+position = Vector2(1717, -559)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement34" parent="." index="36" unique_id=1937202013 instance=ExtResource("3_lq7tt")]
+position = Vector2(1797, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement35" parent="." index="37" unique_id=1619421617 instance=ExtResource("3_lq7tt")]
+position = Vector2(1876, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement36" parent="." index="38" unique_id=1968981046 instance=ExtResource("3_lq7tt")]
+position = Vector2(1956, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement37" parent="." index="39" unique_id=1913928636 instance=ExtResource("3_lq7tt")]
+position = Vector2(1558, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement38" parent="." index="40" unique_id=444054728 instance=ExtResource("3_lq7tt")]
+position = Vector2(1637, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="UniversalElement39" parent="." index="41" unique_id=181694032 instance=ExtResource("3_lq7tt")]
+position = Vector2(1717, -239)
+collision_layer = 256
+element_color = 3
+
+[node name="DualBlock4" parent="." index="42" unique_id=324560763 instance=ExtResource("3_0be26")]
+position = Vector2(1158.0001, -279)
+rotation = -1.5715188
+color_left = 2
+
+[node name="DualBlock5" parent="." index="43" unique_id=205088614 instance=ExtResource("3_0be26")]
+position = Vector2(1238, -279.00003)
+rotation = -1.5715188
+color_left = 2
+
+[node name="DualBlock6" parent="." index="44" unique_id=57360555 instance=ExtResource("3_0be26")]
+position = Vector2(1318.0001, -279.00003)
+rotation = -1.5715188
+color_left = 2
+
+[node name="DualBlock8" parent="." index="45" unique_id=2036023754 instance=ExtResource("3_0be26")]
+position = Vector2(1398, -279.00003)
+rotation = -1.5715188
+color_left = 2
+
+[node name="DualBlock7" parent="." index="46" unique_id=257392974 instance=ExtResource("3_0be26")]
+position = Vector2(1478.0001, -279.00003)
+rotation = -1.5715188
+color_left = 2
+
+[node name="UniversalElement4" parent="." index="47" unique_id=1396214967 instance=ExtResource("3_lq7tt")]
+position = Vector2(919, 0)
+collision_layer = 16
+element_type = 1
+element_color = 2
+is_lethal = true
+
+[node name="UniversalElement17" parent="." index="48" unique_id=1059530436 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -359)
+rotation = -1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement27" parent="." index="49" unique_id=1439274306 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -359)
+rotation = -1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement20" parent="." index="50" unique_id=871729455 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -439)
+rotation = -1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement21" parent="." index="51" unique_id=356071067 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -519)
+rotation = -1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement40" parent="." index="52" unique_id=2127214558 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -359)
+rotation = 1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement41" parent="." index="53" unique_id=776376450 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -439)
+rotation = 1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement42" parent="." index="54" unique_id=212903125 instance=ExtResource("3_lq7tt")]
+position = Vector2(1518, -519)
+rotation = 1.5707964
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement5" parent="." index="55" unique_id=853829729 instance=ExtResource("3_lq7tt")]
+position = Vector2(999, 0)
+collision_layer = 16
+element_type = 1
+element_color = 2
+is_lethal = true
+
+[node name="UniversalElement11" parent="." index="56" unique_id=1797190199 instance=ExtResource("3_lq7tt")]
+position = Vector2(1079, 0)
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+
+[node name="UniversalElement49" parent="." index="57" unique_id=624210714 instance=ExtResource("3_lq7tt")]
+position = Vector2(1160, 0)
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+
+[node name="UniversalElement22" parent="." index="58" unique_id=1918303018 instance=ExtResource("3_lq7tt")]
+position = Vector2(919, -239)
+rotation = 3.1415927
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+anim_active = true
+anim_translation = Vector2(0, 50)
+anim_duration = 4.0
+anim_delay = 2.0
+
+[node name="UniversalElement23" parent="." index="59" unique_id=116726743 instance=ExtResource("3_lq7tt")]
+position = Vector2(945, -252)
+rotation = 3.1415927
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+anim_active = true
+anim_translation = Vector2(0, 50)
+anim_duration = 4.0
+anim_delay = 2.0
+
+[node name="UniversalElement24" parent="." index="60" unique_id=2134853860 instance=ExtResource("3_lq7tt")]
+position = Vector2(893, -253)
+rotation = 3.1415927
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+anim_active = true
+anim_translation = Vector2(0, 50)
+anim_duration = 4.0
+anim_delay = 2.0
+
+[node name="UniversalElement25" parent="." index="61" unique_id=1352471432 instance=ExtResource("3_lq7tt")]
+position = Vector2(280, -319)
+rotation = 3.1415927
+collision_layer = 512
+element_type = 1
+element_color = 3
+is_lethal = true
+
+[node name="UniversalElement26" parent="." index="62" unique_id=491475893 instance=ExtResource("3_lq7tt")]
+position = Vector2(399, -40)
+rotation = -1.5707964
+collision_layer = 8
+element_type = 1
+element_color = 1
+is_lethal = true
+
+[node name="UniversalElement18" parent="." index="63" unique_id=665414633 instance=ExtResource("3_lq7tt")]
+position = Vector2(839, 0)
+collision_layer = 16
+element_type = 1
+element_color = 2
+is_lethal = true
+
+[node name="UniversalElement19" parent="." index="64" unique_id=19244662 instance=ExtResource("3_lq7tt")]
+position = Vector2(759, 0)
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement53" parent="." index="65" unique_id=340779852 instance=ExtResource("3_lq7tt")]
+position = Vector2(599, 0)
+collision_layer = 4
+element_type = 1
+is_lethal = true
+
+[node name="UniversalElement58" parent="." index="66" unique_id=703849250 instance=ExtResource("3_lq7tt")]
+position = Vector2(679, 0)
+collision_layer = 4
+element_type = 1
+is_lethal = true

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dtsownr6jevhx"]
+
+[ext_resource type="PackedScene" uid="uid://qa11n5i7a248" path="res://Entities/Player.tscn" id="1_b7uiw"]
+[ext_resource type="Script" uid="uid://djq0ccetpl04" path="res://Core/LevelManager.gd" id="2_ao84u"]
+[ext_resource type="PackedScene" uid="uid://b22l2xjudc24t" path="res://Levels/Chunks/chunk_base.tscn" id="3_r6vcu"]
+[ext_resource type="PackedScene" uid="uid://4r8vrtf3hice" path="res://Levels/Chunks/chunk_01.tscn" id="4_6hska"]
+[ext_resource type="PackedScene" uid="uid://c6kluy1a0myqs" path="res://Levels/Chunks/chunk_02.tscn" id="5_qjlnc"]
+[ext_resource type="Texture2D" uid="uid://7wr4nyq2yed6" path="res://Assets/background.png" id="6_2lumg"]
+[ext_resource type="Texture2D" uid="uid://yo1ah8uv5ji5" path="res://Assets/PC _ Computer - Geometry Dash - Foregrounds - Foreground 2.png" id="7_r7fn1"]
+
+[node name="Main" type="Node2D" unique_id=306905588]
+
+[node name="Player" parent="." unique_id=1906163207 instance=ExtResource("1_b7uiw")]
+position = Vector2(2000, -40)
+
+[node name="LevelManager" type="Node2D" parent="." unique_id=1081082337]
+script = ExtResource("2_ao84u")
+start_sequence = Array[PackedScene]([ExtResource("3_r6vcu"), ExtResource("4_6hska"), ExtResource("5_qjlnc")])
+random_chunk_scenes = Array[PackedScene]([ExtResource("4_6hska"), ExtResource("5_qjlnc")])
+player_path = NodePath("../Player")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=278308395]
+
+[node name="ParallaxLayer_Lointain" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1594029130]
+motion_scale = Vector2(0.1, 0)
+motion_mirroring = Vector2(2048, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer_Lointain" unique_id=101886780]
+self_modulate = Color(0.2901961, 0.07058824, 0.07058824, 1)
+texture_repeat = 2
+position = Vector2(0, -960)
+texture = ExtResource("6_2lumg")
+centered = false
+
+[node name="ParallaxLayer_Proche" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1796309999]
+motion_scale = Vector2(0.4, 0.1)
+motion_mirroring = Vector2(1024, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer_Proche" unique_id=1007891451]
+self_modulate = Color(0.37042084, 0.011926915, 0.009389155, 1)
+texture_repeat = 2
+position = Vector2(0, 448)
+texture = ExtResource("7_r7fn1")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2048, 600)
